@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>胡睿剛生日快樂 🎉</title>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #0f2027;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .birthday-title {
+      font-size: 60px;
+      background: linear-gradient(45deg, #ff0099, #ff6600, #ffff00, #33ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px #ffffff, 0 0 20px #ff0099;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff0099; }
+      to { text-shadow: 0 0 20px #ffff00; }
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 2px solid #fff;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 30px 0;
+      box-shadow: 0 0 15px #00ffff88;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideUp 1s ease forwards;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 30px #fff8;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 22px;
+      text-align: center;
+      color: #ffd700;
+    }
+
+    .data-table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    .data-table th, .data-table td {
+      padding: 12px;
+      border: 1px solid #fff;
+      text-align: center;
+    }
+
+    .gradient-border {
+      border: 3px solid;
+      border-image-slice: 1;
+      border-width: 4px;
+      border-image-source: linear-gradient(45deg, #00f2fe, #4facfe);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #4facfe88;
+    }
+
+    .typing {
+      font-size: 28px;
+      color: #00ffcc;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #00ffcc;
+      animation: typing 4s steps(40, end), blink .75s step-end infinite;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 90%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    iframe {
+      border-radius: 12px;
+      box-shadow: 0 0 15px #ff99cc;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 50px 0;
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    #tsparticles {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .balloons {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: float 6s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, -30px); }
+      100% { transform: translate(-50%, 0); }
+    }
+  </style>
+</head>
+<body>
+
+<div id="tsparticles"></div>
+
+<div class="container">
+  <h1 class="birthday-title">🎉 生日快樂，胡睿剛！🎂</h1>
+  <div class="typing">資工系的傳奇，今天生日啦！</div>
+
+  <div class="card">
+    <h2>💬 給你的話</h2>
+    <p class="quote">
+      「今天，不只是你出生的日子，<br>
+      更是這個世界多了一位頂尖資工人才的紀念日。」
+    </p>
+    <p style="text-align: center;">
+      胡睿剛，感謝你總是帶來笑聲、智慧與勇氣，<br>
+      無論是 Debug 人生、還是 Compile 夢想，<br>
+      你都像一行完美的程式碼，讓世界更加有序與精彩。
+    </p>
+  </div>
+
+  <div class="card gradient-border">
+    <h2>🔢 胡睿剛 v.2025 特質表</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>屬性</th>
+          <th>等級</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>資工技能</td>
+          <td>💻💻💻💻💻</td>
+          <td>打爆 bug，如切菜</td>
+        </tr>
+        <tr>
+          <td>幽默感</td>
+          <td>🤣🤣🤣</td>
+          <td>我比你好笑</td>
+        </tr>
+        <tr>
+          <td>顏值</td>
+          <td>🔥🔥🔥🔥</td>
+          <td>走到哪都發光 但比我低</td>
+        </tr>
+        <tr>
+          <td>兄弟情義</td>
+          <td>🫱🏻‍🫲🏽🫱🏻‍🫲🏽🫱🏻‍🫲🏽🫱🏻‍🫲🏽🫱🏻</td>
+          <td>你超傻逼</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>🎁 驚喜祝福影片</h2>
+    <center>
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/QLwlGpk6eAQ"
+              title="Happy Birthday"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+      </iframe>
+    </center>
+  </div>
+
+  <div class="card">
+    <h2>🚀 給傻逼剛的生日祝詞</h2>
+    <ul style="font-size: 20px; line-height: 2;">
+      <li>💡 願你寫的每一行程式都不出 bug</li>
+      <li>📈 願你的人生像 Git 一樣版本越來越強</li>
+      <li>💰 願你年薪破百、咖啡永遠免費</li>
+      <li>🏖️ 願你 Debug 時不心碎，Compile 永遠 0 Error</li>
+      <li>🤖 願你創造的程式能改變世界，而你永遠保持熱血！</li>
+    </ul>
+  </div>
+
+  <h3>💌 胡睿剛，你太屌了，生日快樂！</h3>
+
+  <div class="footer">Made by 超屌林柏崴</div>
+</div>
+
+<script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false },
+    background: { color: "#0f2027" },
+    particles: {
+      number: { value: 60 },
+      color: { value: ["#ffffff", "#00ffff", "#ff00ff", "#ffff00"] },
+      shape: { type: "circle" },
+      opacity: { value: 0.8 },
+      size: { value: 4 },
+      move: { enable: true, speed: 1 }
+    }
+  });
+</script>
+
+</body>
+</html>
